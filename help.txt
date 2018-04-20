@@ -1,0 +1,12 @@
+use this with latest angular version 
+$http.get('/contactlist').then(doneCallbacks, failCallbacks);
+
+ function doneCallbacks(res) {
+  console.log("Data received");
+  $scope.contactlist = res.data;
+ }
+
+ function failCallbacks(err) {
+  console.log(err.message);
+ }
+and restart your server if you are getting issues?
